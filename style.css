@@ -1,5 +1,26 @@
-* {
-  background-color: rgb(240, 248, 226);
+body {
+  animation: bgchange 20s ease infinite;
+}
+
+@keyframes bgchange {
+  0% {
+    background: #ffe6e1;
+  } /*変化させたい色*/
+  25% {
+    background: #f7cca6;
+  } /*変化させたい色*/
+  50% {
+    background: #fdcbc1;
+  } /*変化させたい色*/
+  75% {
+    background: #f8f89e;
+  } /*変化させたい色*/
+  90% {
+    background: #bde2f8;
+  } /*変化させたい色*/
+  100% {
+    background: #ffe6e1;
+  } /*変化させたい色*/
 }
 
 a {
@@ -13,12 +34,15 @@ a:hover {
   color: #f00;
 }
 
+b {
+  font-size: 15px;
+}
 header {
   height: 55px;
 }
 
 .header-nav {
-  background-color: rgb(230, 189, 226);
+  background-color: rgb(230, 186, 104);
   position: static;
   height: 60px;
   width: 100%;
@@ -40,19 +64,26 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-direction: row; */
+  flex-direction: row;
 }
 
 .first-image {
   height: 350px;
   width: 300px;
+  border-radius: 10px;
 }
 
 .main-information {
   margin: 25px;
   padding: 25px;
+  font-family: cursive;
+  font-size: 25px;
 }
 
-#main-information-text {
-  font-family: cursive;
+*/ #wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
 }
