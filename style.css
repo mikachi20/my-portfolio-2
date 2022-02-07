@@ -1,0 +1,58 @@
+* {
+  background-color: rgb(240, 248, 226);
+}
+
+a {
+  color: rgb(233, 94, 94);
+  text-decoration: none;
+  font-size: 23px;
+  font-family: cursive;
+}
+
+a:hover {
+  color: #f00;
+}
+
+header {
+  height: 55px;
+}
+
+.header-nav {
+  background-color: rgb(230, 189, 226);
+  position: static;
+  height: 60px;
+  width: 100%;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav {
+  margin-right: 10%;
+}
+
+#first-block {
+  background-size: cover;
+  width: 90%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: row; */
+}
+
+.first-image {
+  height: 350px;
+  width: 300px;
+}
+
+.main-information {
+  margin: 25px;
+  padding: 25px;
+}
+
+#main-information-text {
+  font-family: cursive;
+}
