@@ -5,22 +5,22 @@ body {
 @keyframes bgchange {
   0% {
     background: #ffe6e1;
-  } /*変化させたい色*/
+  }
   25% {
     background: #f7cca6;
-  } /*変化させたい色*/
+  }
   50% {
     background: #fdcbc1;
-  } /*変化させたい色*/
+  }
   75% {
     background: #f8f89e;
-  } /*変化させたい色*/
+  }
   90% {
     background: #bde2f8;
-  } /*変化させたい色*/
+  }
   100% {
     background: #ffe6e1;
-  } /*変化させたい色*/
+  }
 }
 
 a {
@@ -67,10 +67,11 @@ nav {
   flex-direction: row;
 }
 
-.first-image {
+.images {
   height: 350px;
   width: 300px;
   border-radius: 10px;
+  margin: 25px;
 }
 
 .main-information {
@@ -80,10 +81,25 @@ nav {
   font-size: 25px;
 }
 
-*/ #wrapper {
+#second-block {
+  background-color: beige;
+  border-radius: 35px;
+  width: 80%;
+  height: 250px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  color: #fff;
+  flex-direction: row-reverse;
+}
+
+#about-title {
+  font-size: 5vw;
+  color: rgb(37, 37, 37);
+}
+
+#about-content {
+  margin: 25px;
+  font-family: "Meiryo UI", sans-serif;
 }
