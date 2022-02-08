@@ -1,7 +1,5 @@
 body {
   animation: bgchange 20s ease infinite;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 @keyframes bgchange {
@@ -25,6 +23,7 @@ body {
   }
 }
 
+/* ----基本設計---- */
 a {
   color: rgb(233, 94, 94);
   text-decoration: none;
@@ -59,6 +58,14 @@ nav {
   margin-right: 10%;
 }
 
+.images {
+  height: 400px;
+  width: 350px;
+  border-radius: 10px;
+  margin: 25px;
+}
+
+/* ----first-block---- */
 #first-block {
   background-size: cover;
   width: 90%;
@@ -69,13 +76,6 @@ nav {
   flex-direction: row;
 }
 
-.images {
-  height: 350px;
-  width: 300px;
-  border-radius: 10px;
-  margin: 25px;
-}
-
 .main-information {
   margin: 25px;
   padding: 25px;
@@ -83,8 +83,9 @@ nav {
   font-size: 25px;
 }
 
+/* ----second-block---- */
 #second-block {
-  margin: 30px;
+  margin-left: 100px;
   background-color: beige;
   border-radius: 35px;
   width: 80%;
@@ -103,19 +104,21 @@ nav {
   color: rgb(37, 37, 37);
 }
 
+#about-title::first-letter {
+  font-size: 6vw;
+  color: rgb(163, 73, 73);
+}
+
 #about-content {
   margin: 25px;
   font-family: "Meiryo UI", sans-serif;
 }
 
+/* ----third-block---- */
 #third-block {
-  margin: 30px;
-  /* background-color: beige; */
-  border-radius: 35px;
+  margin: auto;
   width: 80%;
   height: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,6 +128,11 @@ nav {
 #skills-title {
   font-size: 5vw;
   color: rgb(37, 37, 37);
+}
+
+#skills-title::first-letter {
+  font-size: 6vw;
+  color: cornflowerblue;
 }
 
 #geek-url {
@@ -140,9 +148,8 @@ nav {
   border-radius: 20px;
   width: 1000px;
   height: 100px;
-  line-height: 100px; /* 行の高さ(heightと同じ値にする) */
-  text-decoration: none; /* aタグのアンダーラインを消す */
-  overflow: hidden; /* はみ出し部分を隠す */
+  line-height: 100px;
+  overflow: hidden;
 }
 
 .skills-langage-text {
@@ -151,11 +158,11 @@ nav {
   display: block;
   height: 100%;
   width: 100%;
-  color: #fff; /* 文字色 */
-  font-size: 16px; /* 文字サイズ */
-  font-weight: bold; /* 文字の太さ */
-  text-align: center; /* テキストを中央揃え */
-  transition: all 0.3s; /* アニメーション実行時間 */
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s;
 }
 
 .skills-langage-text:nth-child(1) {
