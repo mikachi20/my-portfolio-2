@@ -2,6 +2,10 @@ body {
   animation: bgchange 20s ease infinite;
 }
 
+@media screen and (max-width: 480px) {
+  /*　画面サイズが480px以下の場合ここの記述が適用される　*/
+}
+
 @keyframes bgchange {
   0% {
     background: #ffe6e1;
